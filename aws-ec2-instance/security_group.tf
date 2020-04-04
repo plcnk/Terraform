@@ -2,7 +2,7 @@
 resource "aws_security_group" "t-ssh-http-s" {
   name = "t-ssh-http-s"
   description = "Allow SSH and HTTP/S"
-  vpc_id = aws_vpc.test-terraform-vpc.id
+  vpc_id = aws_vpc.terraform-vpc.id
 
   ingress {
       from_port = 22

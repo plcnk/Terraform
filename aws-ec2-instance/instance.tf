@@ -1,14 +1,13 @@
 # Create the ec2 instance
-resource "aws_instance" "test-terraform-ins" {
-  count = var.instance_count
+resource "aws_instance" "terraform-ins" {
   ami = var.ami
   instance_type = var.instance_type
-  key_name = "admin"
-  subnet_id = aws_subnet.test-terraform-sub.id
+  key_name = var.ssh_key_name
+  subnet_id = aws_subnet.terraform-sub.id
   vpc_security_group_ids = ["${aws_security_group.t-ssh-http-s.id}"]
   associate_public_ip_address = "true"
   tags = {
-      Name = "test-terraform-ins-${count.index + 1}"
+      Name = var.instance_name
   }
   root_block_device {
       delete_on_termination = "true"
@@ -17,7 +16,14 @@ resource "aws_instance" "test-terraform-ins" {
   }
 }
 
-# Output the instance's public IP
+# Output the instance's private & public IP
+
+output "instance_priv_ip" {
+  value = aws_instance.terraform-ins.private_ip
+  description = "This is the instance's private IP address"
+}
+
 output "instance_pub_ip" {
-  value = aws_instance.test-terraform-ins[*].public_ip
+  value = aws_instance.terraform-ins.public_ip
+  description = "This is the instance's public IP address"
 }

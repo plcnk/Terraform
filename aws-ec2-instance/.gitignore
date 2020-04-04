@@ -1,0 +1,6 @@
+# Terraform plugins folder
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
