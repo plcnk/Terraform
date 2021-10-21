@@ -18,6 +18,10 @@ AMI IDs from the Ireland region:
 * **RHEL 8**: ami-0ec23856b3bad62d3
 * **SUSE Enterprise 15**: ami-00b5dfb1b867959fd
 
+## Allowed Ports
+
+By default, this script creates a Security Group that **allows SSH from Everywhere** on the instance.
+
 ## Usage
 
 To use this Terraform script, you first need to initialize the plugins by running the command:
