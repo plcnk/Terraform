@@ -4,7 +4,7 @@ resource "aws_instance" "terraform-ins" {
   instance_type = var.instance_type
   key_name = var.ssh_key_name
   subnet_id = aws_subnet.terraform-sub.id
-  vpc_security_group_ids = ["${aws_security_group.t-ssh-http-s.id}"]
+  vpc_security_group_ids = ["${aws_security_group.t-ssh.id}"]
   associate_public_ip_address = "true"
   tags = {
       Name = var.instance_name
