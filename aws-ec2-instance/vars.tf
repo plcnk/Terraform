@@ -20,6 +20,7 @@ variable "gateway_name" {}
 variable "instance_name" {}
 variable "ami" {}
 variable "ssh_key_name" {}
+variable "ssh_key_location" {}
 variable "instance_type" {}
 variable "volume_size" {}
 variable "volume_type" {}
