@@ -27,3 +27,8 @@ output "instance_pub_ip" {
   value = aws_instance.terraform-ins.public_ip
   description = "This is the instance's public IP address"
 }
+
+output instance_pub_dns {
+  value       = aws_instance.terraform-ins.public_dns
+  description = "This is the instance's public DNS name"
+}
