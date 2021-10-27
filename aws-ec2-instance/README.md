@@ -6,7 +6,7 @@ This project automates the deployment of one AWS EC2 instance in a new environme
 
 * Linux Operating System
 * Terraform (tested with v1.0.9)
-* Edited **access_key**, **secret_key** & **ssh_key_location** variables in **terraform.tfvars**
+* Edited **access_key**, **secret_key** & **ssh_key_location** variables in **terraform.tfvars** file
 
 ## Default Region & AMI
 

@@ -1,9 +1,9 @@
-# Provider Variables
+# Provider variables
 access_key = "XXXX" # Edit this
 secret_key = "XXXX" # Edit this
 region     = "eu-west-1"
 
-# Network Variables
+# Network variables
 vpc_name       = "terraform-vpc"
 vpc_cidr_block = "10.1.0.0/16"
 
