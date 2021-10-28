@@ -1,12 +1,12 @@
-# DigitalOcean Droplet deployment with Terraform
+# DigitalOcean k8s cluster deployment with Terraform
 
-This project automates the deployment of one DigitalOcean Droplet.
+This project automates the deployment of a DigitalOcean k8s cluster.
 
 ## Prerequisites
 
 * Linux Operating System
 * Terraform (tested with v1.0.9)
-* Edited **api_token** & **ssh_key_fingerprint** variables in `terraform.tfvars` file.
+* Edited **api_token** variable in `terraform.tfvars` file.
 
 ## Usage
 
