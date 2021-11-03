@@ -50,8 +50,6 @@ jobs:
             #### Terraform Format and Style 🖌\`${{ steps.fmt.outcome }}\`
             #### Terraform Initialization ⚙️\`${{ steps.init.outcome }}\`
             #### Terraform Validation 🤖\`${{ steps.validate.outcome }}\`
-            
-            *Pusher: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
               
             github.rest.issues.createComment({
               issue_number: context.issue.number,
