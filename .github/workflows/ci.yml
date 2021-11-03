@@ -6,17 +6,17 @@ on:
       - master
   pull_request:
 
-strategy:
-  matrix:
-    script:
-      - aws-ec2-instance
-      - digitalocean-droplet
-      - digitalocean-k8s-cluster
-
 jobs:
   terraform:
     name: "Terraform"
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        script:
+          - aws-ec2-instance
+          - digitalocean-droplet
+          - digitalocean-k8s-cluster
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
