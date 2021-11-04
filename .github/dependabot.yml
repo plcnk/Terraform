@@ -3,7 +3,19 @@ version: 2
 
 updates:
   - package-ecosystem: "terraform"
-    directory: "/"
+    directory: "/aws-ec2-instance"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "plcnk"
+  - package-ecosystem: "terraform"
+    directory: "/digitalocean-droplet"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "plcnk"
+  - package-ecosystem: "terraform"
+    directory: "/digitalocean-k8s-cluster"
     schedule:
       interval: "daily"
     reviewers:
