@@ -1,16 +1,3 @@
-terraform {
-  required_providers {
-    digitalocean = {
-      source  = "digitalocean/digitalocean"
-      version = "~> 2.0"
-    }
-  }
-}
-
-provider "digitalocean" {
-  token = var.api_token
-}
-
 resource "digitalocean_droplet" "droplet1" {
   image      = var.image
   name       = var.name
