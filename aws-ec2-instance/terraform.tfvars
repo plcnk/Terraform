@@ -17,7 +17,7 @@ subnet_cidr_block = "10.1.0.0/24"
 gateway_name = "terraform-gw"
 
 # Instance variables
-instance_name    = "Terraform-Test-01"
+instance_name    = "terraform-test-01"
 ami              = "ami-0a8e758f5e873d1c1"
 ssh_key_name     = "admin"
 ssh_key_location = "~/.ssh/id_rsa.pub" # Edit this
