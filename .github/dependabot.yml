@@ -20,11 +20,9 @@ updates:
       interval: "daily"
     reviewers:
       - "plcnk"
-    target-branch: "dev"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
     reviewers:
       - "plcnk"
-    target-branch: "dev"
