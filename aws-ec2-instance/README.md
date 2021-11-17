@@ -5,8 +5,9 @@ This project automates the deployment of one AWS EC2 instance in a new environme
 ## Prerequisites
 
 * Linux Operating System
-* Terraform (tested with v1.0.9)
-* Edited **access_key**, **secret_key** & **ssh_key_location** variables in `terraform.tfvars` file
+* HashiCorp Terraform
+* HashiCorp Vault with an AWS Secrets Engine configured
+* Edited **vault_address**, **vault_token** & **ssh_key_location** variables in `terraform.tfvars` file
 
 ## Default Region & AMI
 
@@ -31,10 +32,16 @@ To use this Terraform script, you first need to initialize the plugins by runnin
 terraform init
 ```
 
-Next, you can run the script by using the command:
+Next, you can plan the infrastructure:
 
 ```shell
-terraform apply
+terraform plan -out=tf.plan
+```
+
+Then, deploy the infrastructure using:
+
+```shell
+terraform apply tf.plan
 ```
 
 To delete the whole infrastructure, run the command:

@@ -1,7 +1,11 @@
+# Vault variables
+vault_address      = "http://XXXX" # Edit this
+vault_token        = "XXXX"        # Edit this
+vault_aws_path     = "aws"
+vault_aws_iam_role = "terraform-role"
+
 # Provider variables
-access_key = "XXXX" # Edit this
-secret_key = "XXXX" # Edit this
-region     = "eu-west-1"
+region = "eu-west-1"
 
 # Network variables
 vpc_name       = "terraform-vpc"
