@@ -15,13 +15,13 @@ terraform {
 }
 
 provider "vault" {
-  address = "http://XXXX:8200"
-  token   = "XXXX"
+  address = var.vault_address
+  token   = var.vault_token
 }
 
 data "vault_aws_access_credentials" "aws-creds" {
-  backend = "aws"
-  role    = "terraform-role"
+  backend = var.vault_aws_path
+  role    = var.vault_aws_iam_role
 }
 
 provider "aws" {

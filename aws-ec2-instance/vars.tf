@@ -1,6 +1,10 @@
+# Vault variables
+variable "vault_address" {}
+variable "vault_token" {}
+variable "vault_aws_path" {}
+variable "vault_aws_iam_role" {}
+
 # Provider variables
-# variable "access_key" {}
-# variable "secret_key" {}
 variable "region" {}
 
 #Network variables
