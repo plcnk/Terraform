@@ -16,10 +16,16 @@ To use this Terraform script, you first need to initialize the plugins by runnin
 terraform init
 ```
 
-Next, you can run the script by using the command:
+Next, you can plan the infrastructure:
 
 ```shell
-terraform apply
+terraform plan -out=tf.plan
+```
+
+Then, deploy the infrastructure using:
+
+```shell
+terraform apply tf.plan
 ```
 
 To delete the whole infrastructure, run the command:
