@@ -5,7 +5,7 @@ This project automates the deployment of one DigitalOcean Droplet.
 ## Prerequisites
 
 * Linux Operating System
-* Terraform (tested with v1.0.9)
+* [HashiCorp Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * Edited **api_token** & **ssh_key_fingerprint** variables in `terraform.tfvars` file.
 
 ## Usage

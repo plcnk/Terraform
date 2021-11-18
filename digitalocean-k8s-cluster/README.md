@@ -5,7 +5,7 @@ This project automates the deployment of a DigitalOcean k8s cluster.
 ## Prerequisites
 
 * Linux Operating System
-* Terraform (tested with v1.0.9)
+* [HashiCorp Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * Edited **api_token** variable in `terraform.tfvars` file.
 
 ## Usage
