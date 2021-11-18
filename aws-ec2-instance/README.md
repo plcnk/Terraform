@@ -5,8 +5,8 @@ This project automates the deployment of one AWS EC2 instance in a new environme
 ## Prerequisites
 
 * Linux Operating System
-* HashiCorp Terraform
-* HashiCorp Vault with an AWS Secrets Engine configured
+* [HashiCorp Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+* [HashiCorp Vault](https://learn.hashicorp.com/tutorials/vault/getting-started-install) with an AWS Secrets Engine configured
 * Edited **vault_address**, **vault_token** & **ssh_key_location** variables in `terraform.tfvars` file
 
 ## Default Region & AMI
